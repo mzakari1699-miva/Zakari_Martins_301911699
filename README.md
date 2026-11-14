@@ -1,7 +1,13 @@
-# Martins Zakari — MIT 8103
+# Financed Input Delivery Records
 
-Student ID: 301911699
+Martins Zakari · Student ID 301911699
 
-Financed Input Delivery Records. Entities: SME, supplier, purchase order, input item, delivery; each order links an SME and supplier, and each delivery links an order and an input item. Rule: delivery reference is UNIQUE. Useful SQL query: delivered quantity by item and order. A SQL transaction records a delivery and outbox event; a consumer appends a MongoDB snapshot of the delivery, its order, SME, and supplier.
+The portfolio uses fictional records for Financed Input Delivery Records.
 
-The portfolio is being generated. Completed stages will appear in the commit history.
+- [Portfolio 1](portfolio-1-database-design/)
+- [Portfolio 2](portfolio-2-query-optimisation/)
+- [Portfolio 3](portfolio-3-transactions-concurrency/)
+- [Portfolio 4](portfolio-4-nosql/)
+- [Portfolio 5](portfolio-5-distributed-cloud/)
+
+[Final summary](Zakari_Martins_301911699_FinalSummary.md) · [PDF](Zakari_Martins_301911699_FinalSummary.pdf)
