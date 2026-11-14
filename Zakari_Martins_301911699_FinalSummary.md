@@ -4,7 +4,7 @@
 
 ## Case study
 
-My case study is Financed Input Delivery Records. I designed the database for SME procurement staff, supplier representatives, receiving staff and database students, with separate tables named sme, supplier, purchase_order, input_item, delivery and outbox_event. It supports these operations: create purchase orders linking an SME and a supplier; record deliveries linking a purchase order and an input item; query delivered quantity by item and order; record an outbox event atomically with a delivery and consume it into a MongoDB snapshot.
+This case study models Financed Input Delivery Records for SME procurement staff, supplier representatives and receiving staff. The relational schema (sme, supplier, purchase_order, purchase_order_line, input_item, delivery, outbox_event) supports four operations: creating purchase orders between an SME and a supplier; recording deliveries against order lines; querying delivered quantity by item and order; and writing a delivery and its outbox event in one transaction, after which a consumer projects the event into a MongoDB snapshot for fast reads.
 
 ## Portfolio 1: Database Design and Modelling
 
